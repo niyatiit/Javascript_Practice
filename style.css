@@ -1,0 +1,289 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Calistoga", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    background-color: #e6b5b8;
+}
+
+#main {
+    background-color: #a7767c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box {
+    height: 10vh;
+    width: 20vw;
+    /* border: 2px solid black; */
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #fae5e2;
+}
+
+.round1 {
+    height: 6vh;
+    width: 3vw;
+    border-radius: 50%;
+    background-color: darkred;
+    filter: blur(1px);
+}
+
+.svg1 {
+    position: relative;
+    left: 5.5px;
+    color: white;
+
+}
+
+.round2 {
+    height: 6vh;
+    width: 3vw;
+    border-radius: 50%;
+    filter: blur(1px);
+    background-color: darkgoldenrod;
+}
+
+.svg2 {
+    position: relative;
+    left: 5.5px;
+    color: white;
+}
+
+.round3 {
+    height: 6vh;
+    width: 3vw;
+    border-radius: 50%;
+    filter: blur(1px);
+    background-color: green;
+}
+
+.svg3 {
+    position: relative;
+    left: 5.5px;
+    color: white;
+}
+
+.round4 {
+    height: 6vh;
+    width: 3vw;
+    border-radius: 50%;
+    filter: blur(1px);
+    background-color: blue;
+}
+
+.svg4 {
+    position: relative;
+    left: 5.5px;
+    top: 1px;
+    color: white;
+}
+
+.round1:hover {
+    size: 10px;
+    cursor: pointer;
+    filter: none;
+}
+
+.round2:hover {
+    size: 10px;
+    cursor: pointer;
+    filter: none;
+}
+
+.round3:hover {
+    size: 10px;
+    cursor: pointer;
+    filter: none;
+}
+
+.round4:hover {
+    size: 10px;
+    cursor: pointer;
+    filter: none;
+}
+
+.plainBox1 {
+    padding: 10px;
+    margin-left: 32vw;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+    height: 18vh;
+    width: 35vw;
+    border: 1px solid rgb(11, 11, 11);
+    display: none;
+    border-radius: 30px;
+    animation: mymove 5s infinite;
+    background-color: #fae5e2;
+}
+
+@keyframes mymove {
+    50% {
+        box-shadow: 5px 10px 20px darkred;
+    }
+}
+
+.plainBox2 {
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+    margin-left: 32vw;
+    height: 18vh;
+    width: 35vw;
+    border: 1px solid rgb(6, 6, 6);
+    display: none;
+    border-radius: 30px;
+    padding:10px;
+    animation: mymove1 5s infinite;
+    background-color: #fae5e2;
+}
+@keyframes mymove1 {
+    50% {
+        box-shadow: 5px 10px 20px darkgoldenrod;
+    }
+}
+.plainBox3 {
+    padding:10px;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+    margin-left: 32vw;
+    height: 18vh;
+    width: 35vw;
+    border: 1px solid rgb(9, 9, 9);
+    display: none;
+    border-radius: 30px;
+    animation: mymove2 5s infinite;
+    background-color: #fae5e2;
+}
+@keyframes mymove2{
+    50%{
+        box-shadow: 5px 10px 20px green;
+    }
+}
+
+.plainBox4 {
+    padding:10px;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+    margin-left: 32vw;
+    height: 19vh;
+    width: 35vw;
+    border: 1px solid red;
+    display: none;
+    border-radius: 30px;
+    animation: mymove3 5s infinite;
+    background-color: #fae5e2;
+}
+@keyframes mymove3 {
+    50%{
+        box-shadow: 5px 10px 20px blue;
+    }
+}
+
+#error {
+    display: flex;
+    justify-content: space-between;
+    color: darkred;
+    padding: 8px;
+}
+
+.pera {
+    padding: 10px;
+    font-size: 1.5vw;
+}
+#warning_msg{
+    display: flex;
+    justify-content: space-between;
+    color: darkgoldenrod;
+    padding: 8px;
+}
+#sucess_msg{
+    display: flex;
+    justify-content: space-between;
+    color: green;
+    padding: 8px;
+}
+#help_msg{
+    display: flex;
+    justify-content: space-between;
+    color: blue;
+    padding: 8px;
+}
+
+
+
+@media only screen and (max-width:600px){
+    body,html{
+        height:100%;
+        width:100%;
+    }
+    #box{
+        width:95%;
+    }
+    .round1{
+        height:6vh;
+        width: 15vw;
+    }
+    .svg1{
+        position: relative;
+        left:1vw;
+    }
+    .round2{
+        height:6vh;
+        width: 15vw;
+    }
+    .svg2{
+        position: relative;
+        left:1vw;
+    }
+    .round3{
+        height:6vh;
+        width: 15vw;
+    }
+    .svg3{
+        position: relative;
+        left:1.2vw;
+    }
+    .round4{
+        height:6vh;
+        width: 15vw;
+    }
+    .svg4{
+        position: relative;
+        left:1.2vw;
+    }
+    .plainBox1{
+        width:70%;
+        position: relative;
+        left:-16vw;
+    }
+    .plainBox2{
+        width:70%;
+        position: relative;
+        left:-16vw;
+    }
+    .plainBox3{
+        width:70%;
+        position: relative;
+        left:-16vw;
+    }
+    .plainBox4{
+        width:70%;
+        position: relative;
+        left:-16vw;
+    }
+    .pera{
+        font-size: 3.5vw;
+    }
+}
